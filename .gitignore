@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.env
+agent_output/
+data
+.cache/
+agent_output_test.log
+server.log
+imported/
+tunnel.log

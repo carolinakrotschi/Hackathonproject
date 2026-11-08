@@ -1,0 +1,582 @@
+[
+ {
+  "question_id": "osm-way363805324-H01",
+  "answer": "The largest room is 1.02 (Generic room 1.02) at 162.33 m².\nAnswer: 1.02 (Generic room 1.02), 162.33 m²"
+ },
+ {
+  "question_id": "osm-way363805324-H02",
+  "answer": "Answer: 54.77"
+ },
+ {
+  "question_id": "osm-way363805324-H03",
+  "answer": "Answer: 44.9"
+ },
+ {
+  "question_id": "osm-way363805324-H04",
+  "answer": "That is E01 (Großer Saal).\nAnswer: E01 (Großer Saal)"
+ },
+ {
+  "question_id": "osm-way363805324-H07",
+  "answer": "That is 1.10 (Generic room 1.10).\nAnswer: 1.10 (Generic room 1.10)"
+ },
+ {
+  "question_id": "osm-way363805324-H10",
+  "answer": "Answer: 5"
+ },
+ {
+  "question_id": "osm-way363805324-H11",
+  "answer": "Answer: 21.16"
+ },
+ {
+  "question_id": "osm-way43035346-H01",
+  "answer": "The largest room is N3806 (Generic room N3806) at 115.03 m².\nAnswer: N3806 (Generic room N3806), 115.03 m²"
+ },
+ {
+  "question_id": "osm-way43035346-H02",
+  "answer": "Answer: 592.8"
+ },
+ {
+  "question_id": "osm-way43035346-H03",
+  "answer": "Answer: 53.98"
+ },
+ {
+  "question_id": "osm-way43035346-H04",
+  "answer": "That is N0806 (Generic room N0806).\nAnswer: N0806 (Generic room N0806)"
+ },
+ {
+  "question_id": "osm-way43035346-H05",
+  "answer": "Answer: 6"
+ },
+ {
+  "question_id": "osm-way43035346-H06",
+  "answer": "Answer: 11.85"
+ },
+ {
+  "question_id": "osm-way43035346-H07",
+  "answer": "Answer: 0"
+ },
+ {
+  "question_id": "osm-way50299584-H01",
+  "answer": "The largest room is 0566 (Generic room 0566) at 559.8 m².\nAnswer: 0566 (Generic room 0566), 559.8 m²"
+ },
+ {
+  "question_id": "osm-way50299584-H02",
+  "answer": "Answer: 959.75"
+ },
+ {
+  "question_id": "osm-way50299584-H03",
+  "answer": "Answer: 103.36"
+ },
+ {
+  "question_id": "osm-way50299584-H04",
+  "answer": "That is 0583 (Generic room 0583).\nAnswer: 0583 (Generic room 0583)"
+ },
+ {
+  "question_id": "osm-way50299584-H06",
+  "answer": "That is -1530 (Generic room -1530).\nAnswer: -1530 (Generic room -1530)"
+ },
+ {
+  "question_id": "osm-way50299584-H11",
+  "answer": "That is 1530 (Generic room 1530).\nAnswer: 1530 (Generic room 1530)"
+ },
+ {
+  "question_id": "osm-way50299584-H12",
+  "answer": "Answer: 4"
+ },
+ {
+  "question_id": "osm-way50299584-H13",
+  "answer": "Answer: 62.01"
+ },
+ {
+  "question_id": "osm-way50300147-H01",
+  "answer": "The largest room is 0219 (Generic room 0219) at 530.16 m².\nAnswer: 0219 (Generic room 0219), 530.16 m²"
+ },
+ {
+  "question_id": "osm-way50300147-H02",
+  "answer": "Answer: 1699.55"
+ },
+ {
+  "question_id": "osm-way50300147-H03",
+  "answer": "Answer: 78.24"
+ },
+ {
+  "question_id": "osm-way50300147-H04",
+  "answer": "That is 0260 (Generic room 0260).\nAnswer: 0260 (Generic room 0260)"
+ },
+ {
+  "question_id": "osm-way50300147-H05",
+  "answer": "That is 0219 (Generic room 0219).\nAnswer: 0219 (Generic room 0219)"
+ },
+ {
+  "question_id": "osm-way50300147-H06",
+  "answer": "That is 0209 (Generic room 0209).\nAnswer: 0209 (Generic room 0209)"
+ },
+ {
+  "question_id": "osm-way50300147-H07",
+  "answer": "Answer: 6"
+ },
+ {
+  "question_id": "osm-way50300147-H08",
+  "answer": "Answer: 45.49"
+ },
+ {
+  "question_id": "osm-way50300147-H09",
+  "answer": "Answer: 47"
+ },
+ {
+  "question_id": "osm-way50300147-H10",
+  "answer": "Answer: 47"
+ },
+ {
+  "question_id": "proc-campus-test-000-H01",
+  "answer": "The largest room is 1.25 (Toilet 1.25) at 34.02 m².\nAnswer: 1.25 (Toilet 1.25), 34.02 m²"
+ },
+ {
+  "question_id": "proc-campus-test-000-H02",
+  "answer": "Answer: 105.42"
+ },
+ {
+  "question_id": "proc-campus-test-000-H03",
+  "answer": "Answer: 21"
+ },
+ {
+  "question_id": "proc-campus-test-000-H04",
+  "answer": "Answer: 128.24"
+ },
+ {
+  "question_id": "proc-campus-test-000-H05",
+  "answer": "Answer: 41.31"
+ },
+ {
+  "question_id": "proc-campus-test-004-H01",
+  "answer": "The largest room is 0.15 (Meeting room 0.15) at 35.46 m².\nAnswer: 0.15 (Meeting room 0.15), 35.46 m²"
+ },
+ {
+  "question_id": "proc-campus-test-004-H02",
+  "answer": "Answer: 184.14"
+ },
+ {
+  "question_id": "proc-campus-test-004-H03",
+  "answer": "Answer: 13"
+ },
+ {
+  "question_id": "proc-campus-test-004-H04",
+  "answer": "Answer: 74.29"
+ },
+ {
+  "question_id": "proc-campus-test-004-H05",
+  "answer": "Answer: 15.06"
+ },
+ {
+  "question_id": "proc-campus-test-005-H01",
+  "answer": "The largest room is 1.13 (Meeting room 1.13) at 41.52 m².\nAnswer: 1.13 (Meeting room 1.13), 41.52 m²"
+ },
+ {
+  "question_id": "proc-campus-test-005-H02",
+  "answer": "Answer: 456.72"
+ },
+ {
+  "question_id": "proc-campus-test-005-H03",
+  "answer": "Answer: 18"
+ },
+ {
+  "question_id": "proc-campus-test-005-H04",
+  "answer": "Answer: 89.51"
+ },
+ {
+  "question_id": "proc-campus-test-005-H05",
+  "answer": "Answer: 3"
+ },
+ {
+  "question_id": "proc-campus-test-005-H06",
+  "answer": "Answer: 39.09"
+ },
+ {
+  "question_id": "proc-campus-test-008-H01",
+  "answer": "The largest room is 2.19 (Office 2.19) at 39.66 m².\nAnswer: 2.19 (Office 2.19), 39.66 m²"
+ },
+ {
+  "question_id": "proc-campus-test-008-H02",
+  "answer": "Answer: 86.4"
+ },
+ {
+  "question_id": "proc-campus-test-008-H03",
+  "answer": "Answer: 11"
+ },
+ {
+  "question_id": "proc-campus-test-008-H04",
+  "answer": "Answer: 78.91"
+ },
+ {
+  "question_id": "proc-campus-test-008-H05",
+  "answer": "Answer: 33.73"
+ },
+ {
+  "question_id": "proc-campus-test-012-H01",
+  "answer": "The largest room is 1.12 (Office 1.12) at 40.02 m².\nAnswer: 1.12 (Office 1.12), 40.02 m²"
+ },
+ {
+  "question_id": "proc-campus-test-012-H02",
+  "answer": "Answer: 99.18"
+ },
+ {
+  "question_id": "proc-campus-test-012-H03",
+  "answer": "Answer: 16"
+ },
+ {
+  "question_id": "proc-campus-test-012-H04",
+  "answer": "Answer: 43.83"
+ },
+ {
+  "question_id": "proc-campus-test-012-H05",
+  "answer": "Answer: 38.46"
+ },
+ {
+  "question_id": "proc-campus-test-013-H01",
+  "answer": "The largest room is 5.26 (Storage 5.26) at 40.86 m².\nAnswer: 5.26 (Storage 5.26), 40.86 m²"
+ },
+ {
+  "question_id": "proc-campus-test-013-H02",
+  "answer": "Answer: 200.28"
+ },
+ {
+  "question_id": "proc-campus-test-013-H03",
+  "answer": "Answer: 15"
+ },
+ {
+  "question_id": "proc-campus-test-013-H04",
+  "answer": "Answer: 116.61"
+ },
+ {
+  "question_id": "proc-campus-test-013-H05",
+  "answer": "Answer: 36.37"
+ },
+ {
+  "question_id": "proc-factory-test-001-H01",
+  "answer": "Answer: 92.1"
+ },
+ {
+  "question_id": "proc-factory-test-001-H02",
+  "answer": "Answer: 9"
+ },
+ {
+  "question_id": "proc-factory-test-001-H03",
+  "answer": "Answer: 6"
+ },
+ {
+  "question_id": "proc-factory-test-002-H01",
+  "answer": "Answer: 126.5"
+ },
+ {
+  "question_id": "proc-factory-test-002-H02",
+  "answer": "Answer: 9"
+ },
+ {
+  "question_id": "proc-factory-test-002-H03",
+  "answer": "Answer: 4"
+ },
+ {
+  "question_id": "proc-factory-test-002-H04",
+  "answer": "Answer: 111.98"
+ },
+ {
+  "question_id": "proc-factory-test-003-H01",
+  "answer": "The largest room is 1.17 (Meeting room 1.17) at 29.35 m².\nAnswer: 1.17 (Meeting room 1.17), 29.35 m²"
+ },
+ {
+  "question_id": "proc-factory-test-003-H02",
+  "answer": "Answer: 154.2"
+ },
+ {
+  "question_id": "proc-factory-test-003-H03",
+  "answer": "Answer: 7"
+ },
+ {
+  "question_id": "proc-factory-test-003-H04",
+  "answer": "Answer: 89.86"
+ },
+ {
+  "question_id": "proc-factory-test-003-H05",
+  "answer": "Answer: 3"
+ },
+ {
+  "question_id": "proc-factory-test-003-H06",
+  "answer": "Answer: 32.02"
+ },
+ {
+  "question_id": "proc-factory-test-006-H01",
+  "answer": "Answer: 203.3"
+ },
+ {
+  "question_id": "proc-factory-test-006-H02",
+  "answer": "Answer: 4"
+ },
+ {
+  "question_id": "proc-factory-test-006-H03",
+  "answer": "Answer: 3"
+ },
+ {
+  "question_id": "proc-factory-test-006-H04",
+  "answer": "Answer: 53.09"
+ },
+ {
+  "question_id": "proc-factory-test-007-H01",
+  "answer": "The largest room is 1.10 (Kitchen 1.10) at 28.75 m².\nAnswer: 1.10 (Kitchen 1.10), 28.75 m²"
+ },
+ {
+  "question_id": "proc-factory-test-007-H02",
+  "answer": "Answer: 413.4"
+ },
+ {
+  "question_id": "proc-factory-test-007-H03",
+  "answer": "Answer: 9"
+ },
+ {
+  "question_id": "proc-factory-test-007-H04",
+  "answer": "Answer: 220.61"
+ },
+ {
+  "question_id": "proc-factory-test-007-H05",
+  "answer": "Answer: 4"
+ },
+ {
+  "question_id": "proc-factory-test-007-H06",
+  "answer": "Answer: 34.8"
+ },
+ {
+  "question_id": "proc-factory-test-009-H01",
+  "answer": "Answer: 1220.16"
+ },
+ {
+  "question_id": "proc-factory-test-009-H02",
+  "answer": "Answer: 12"
+ },
+ {
+  "question_id": "proc-factory-test-009-H03",
+  "answer": "Answer: 4"
+ },
+ {
+  "question_id": "proc-factory-test-010-H01",
+  "answer": "The largest room is 0.40 (Meeting room 0.40) at 29.95 m².\nAnswer: 0.40 (Meeting room 0.40), 29.95 m²"
+ },
+ {
+  "question_id": "proc-factory-test-010-H02",
+  "answer": "Answer: 111.6"
+ },
+ {
+  "question_id": "proc-factory-test-010-H03",
+  "answer": "Answer: 10"
+ },
+ {
+  "question_id": "proc-factory-test-010-H04",
+  "answer": "Answer: 113.02"
+ },
+ {
+  "question_id": "proc-factory-test-010-H05",
+  "answer": "Answer: 4"
+ },
+ {
+  "question_id": "proc-factory-test-011-H01",
+  "answer": "Answer: 2079.98"
+ },
+ {
+  "question_id": "proc-factory-test-011-H02",
+  "answer": "Answer: 7"
+ },
+ {
+  "question_id": "proc-factory-test-011-H03",
+  "answer": "Answer: 4"
+ },
+ {
+  "question_id": "proc-factory-test-011-H04",
+  "answer": "Answer: 51.42"
+ },
+ {
+  "question_id": "resplan-1153-H01",
+  "answer": "Answer: 71.29"
+ },
+ {
+  "question_id": "resplan-1153-H02",
+  "answer": "Answer: 3"
+ },
+ {
+  "question_id": "resplan-12469-H01",
+  "answer": "Answer: 109.7"
+ },
+ {
+  "question_id": "resplan-12469-H02",
+  "answer": "Answer: 8"
+ },
+ {
+  "question_id": "resplan-12469-H03",
+  "answer": "Answer: 5"
+ },
+ {
+  "question_id": "resplan-12962-H01",
+  "answer": "Answer: 5"
+ },
+ {
+  "question_id": "resplan-14307-H01",
+  "answer": "Answer: 3"
+ },
+ {
+  "question_id": "resplan-3573-H01",
+  "answer": "The largest room is 0.06 (Bathroom 0.06) at 6.98 m².\nAnswer: 0.06 (Bathroom 0.06), 6.98 m²"
+ },
+ {
+  "question_id": "resplan-3573-H02",
+  "answer": "Answer: 17.65"
+ },
+ {
+  "question_id": "resplan-3573-H03",
+  "answer": "Answer: 6"
+ },
+ {
+  "question_id": "resplan-3573-H04",
+  "answer": "Answer: 18.58"
+ },
+ {
+  "question_id": "resplan-3573-H05",
+  "answer": "Answer: 6"
+ },
+ {
+  "question_id": "resplan-6532-H01",
+  "answer": "Answer: 3"
+ },
+ {
+  "question_id": "resplan-6532-H02",
+  "answer": "Answer: 3"
+ },
+ {
+  "question_id": "resplan-8357-H01",
+  "answer": "Answer: 4"
+ },
+ {
+  "question_id": "resplan-8357-H02",
+  "answer": "Answer: 5"
+ },
+ {
+  "question_id": "resplan-9751-H01",
+  "answer": "Answer: 5"
+ },
+ {
+  "question_id": "swiss-100-H01",
+  "answer": "The largest room is 1.05 (Living room 1.05 (apartment 4)) at 30.16 m².\nAnswer: 1.05 (Living room 1.05 (apartment 4)), 30.16 m²"
+ },
+ {
+  "question_id": "swiss-100-H02",
+  "answer": "Answer: 32.47"
+ },
+ {
+  "question_id": "swiss-100-H03",
+  "answer": "Answer: 39.2"
+ },
+ {
+  "question_id": "swiss-1195-H01",
+  "answer": "Answer: 207.01"
+ },
+ {
+  "question_id": "swiss-1195-H02",
+  "answer": "Answer: 3"
+ },
+ {
+  "question_id": "swiss-1671-H01",
+  "answer": "The largest room is 0.05 (Bedroom 0.05 (apartment 1)) at 19.34 m².\nAnswer: 0.05 (Bedroom 0.05 (apartment 1)), 19.34 m²"
+ },
+ {
+  "question_id": "swiss-1671-H02",
+  "answer": "Answer: 133.95"
+ },
+ {
+  "question_id": "swiss-1671-H03",
+  "answer": "Answer: 27.49"
+ },
+ {
+  "question_id": "swiss-1671-H04",
+  "answer": "Answer: 3"
+ },
+ {
+  "question_id": "swiss-17033-H01",
+  "answer": "Answer: 50.66"
+ },
+ {
+  "question_id": "swiss-1760-H01",
+  "answer": "The largest room is 0.06 (Kitchen 0.06 (apartment 1)) at 6.73 m².\nAnswer: 0.06 (Kitchen 0.06 (apartment 1)), 6.73 m²"
+ },
+ {
+  "question_id": "swiss-1760-H02",
+  "answer": "Answer: 61.12"
+ },
+ {
+  "question_id": "swiss-17736-H01",
+  "answer": "The largest room is 3.03 (Bedroom 3.03 (apartment 8)) at 19.44 m².\nAnswer: 3.03 (Bedroom 3.03 (apartment 8)), 19.44 m²"
+ },
+ {
+  "question_id": "swiss-17736-H02",
+  "answer": "Answer: 34.0"
+ },
+ {
+  "question_id": "swiss-17736-H03",
+  "answer": "Answer: 34.14"
+ },
+ {
+  "question_id": "swiss-1825-H01",
+  "answer": "Answer: 20.54"
+ },
+ {
+  "question_id": "swiss-2-H01",
+  "answer": "Answer: 42.31"
+ },
+ {
+  "question_id": "swiss-2080-H01",
+  "answer": "The largest room is 2.15 (Bathroom 2.15 (apartment 8)) at 4.13 m².\nAnswer: 2.15 (Bathroom 2.15 (apartment 8)), 4.13 m²"
+ },
+ {
+  "question_id": "swiss-2080-H02",
+  "answer": "Answer: 12.3"
+ },
+ {
+  "question_id": "swiss-2080-H03",
+  "answer": "Answer: 38.28"
+ },
+ {
+  "question_id": "swiss-2080-H04",
+  "answer": "Answer: 4"
+ },
+ {
+  "question_id": "swiss-2873-H01",
+  "answer": "The largest room is 2.14 (Storage 2.14 (apartment 10)) at 3.22 m².\nAnswer: 2.14 (Storage 2.14 (apartment 10)), 3.22 m²"
+ },
+ {
+  "question_id": "swiss-2873-H02",
+  "answer": "Answer: 12.53"
+ },
+ {
+  "question_id": "swiss-2873-H03",
+  "answer": "Answer: 34.27"
+ },
+ {
+  "question_id": "swiss-2873-H04",
+  "answer": "Answer: 3"
+ },
+ {
+  "question_id": "swiss-482-H01",
+  "answer": "The largest room is 4.12 (Storage 4.12 (apartment 18)) at 2.32 m².\nAnswer: 4.12 (Storage 4.12 (apartment 18)), 2.32 m²"
+ },
+ {
+  "question_id": "swiss-482-H02",
+  "answer": "Answer: 16.07"
+ },
+ {
+  "question_id": "swiss-482-H03",
+  "answer": "Answer: 67.01"
+ },
+ {
+  "question_id": "swiss-482-H04",
+  "answer": "Answer: 3"
+ },
+ {
+  "question_id": "swiss-6128-H01",
+  "answer": "Answer: 74.92"
+ }
+]

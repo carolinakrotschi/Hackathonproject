@@ -1,0 +1,1682 @@
+{
+ "visiting_hours": "10:00–20:00",
+ "main_entrance": "demo-klinikum-F0-S002",
+ "ids": {
+  "entrance": "demo-klinikum-F0-S002",
+  "emergency": "demo-klinikum-F0-S006",
+  "radiology": "demo-klinikum-F0-S021",
+  "floors": [
+   "demo-klinikum-F0",
+   "demo-klinikum-F1",
+   "demo-klinikum-F2"
+  ],
+  "lifts": [
+   "demo-klinikum-V01",
+   "demo-klinikum-V02"
+  ],
+  "stairs": [
+   "demo-klinikum-V03"
+  ],
+  "coffee_far": "demo-klinikum-A0162",
+  "coffee_far_room": "demo-klinikum-F1-S002",
+  "cafe": "demo-klinikum-F0-S005",
+  "pharmacy": "demo-klinikum-F0-S014",
+  "lab": "demo-klinikum-F0-S015",
+  "triage": "demo-klinikum-F0-S011",
+  "resuscitation": "demo-klinikum-F0-S012",
+  "toilet_f2": "demo-klinikum-F2-S019",
+  "nurse_stations": [
+   "demo-klinikum-F1-S009",
+   "demo-klinikum-F2-S009"
+  ],
+  "far_room_f2": "demo-klinikum-F2-S037",
+  "radiologist": "S01",
+  "staff_pagers": [
+   "PG-S01",
+   "PG-S02",
+   "PG-S03"
+  ]
+ },
+ "beacons": [
+  {
+   "id": "B-F0-01",
+   "floor_id": "demo-klinikum-F0",
+   "x": 5.14,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F0-S001"
+  },
+  {
+   "id": "B-F0-02",
+   "floor_id": "demo-klinikum-F0",
+   "x": 15.43,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F0-S001"
+  },
+  {
+   "id": "B-F0-03",
+   "floor_id": "demo-klinikum-F0",
+   "x": 25.71,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F0-S001"
+  },
+  {
+   "id": "B-F0-04",
+   "floor_id": "demo-klinikum-F0",
+   "x": 36.0,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F0-S001"
+  },
+  {
+   "id": "B-F0-05",
+   "floor_id": "demo-klinikum-F0",
+   "x": 46.29,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F0-S001"
+  },
+  {
+   "id": "B-F0-06",
+   "floor_id": "demo-klinikum-F0",
+   "x": 56.57,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F0-S001"
+  },
+  {
+   "id": "B-F0-07",
+   "floor_id": "demo-klinikum-F0",
+   "x": 66.86,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F0-S001"
+  },
+  {
+   "id": "B-F0-08",
+   "floor_id": "demo-klinikum-F0",
+   "x": 7.0,
+   "y": 4.5,
+   "space_id": "demo-klinikum-F0-S002"
+  },
+  {
+   "id": "B-F0-09",
+   "floor_id": "demo-klinikum-F0",
+   "x": 16.0,
+   "y": 6.5,
+   "space_id": "demo-klinikum-F0-S003"
+  },
+  {
+   "id": "B-F0-10",
+   "floor_id": "demo-klinikum-F0",
+   "x": 22.0,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F0-S004"
+  },
+  {
+   "id": "B-F0-11",
+   "floor_id": "demo-klinikum-F0",
+   "x": 32.0,
+   "y": 4.5,
+   "space_id": "demo-klinikum-F0-S005"
+  },
+  {
+   "id": "B-F0-12",
+   "floor_id": "demo-klinikum-F0",
+   "x": 44.5,
+   "y": 4.5,
+   "space_id": "demo-klinikum-F0-S006"
+  },
+  {
+   "id": "B-F0-13",
+   "floor_id": "demo-klinikum-F0",
+   "x": 53.5,
+   "y": 4.5,
+   "space_id": "demo-klinikum-F0-S006"
+  },
+  {
+   "id": "B-F0-14",
+   "floor_id": "demo-klinikum-F0",
+   "x": 41.75,
+   "y": -1.75,
+   "space_id": "demo-klinikum-F0-S007"
+  },
+  {
+   "id": "B-F0-15",
+   "floor_id": "demo-klinikum-F0",
+   "x": 45.25,
+   "y": -1.75,
+   "space_id": "demo-klinikum-F0-S008"
+  },
+  {
+   "id": "B-F0-16",
+   "floor_id": "demo-klinikum-F0",
+   "x": 48.75,
+   "y": -1.75,
+   "space_id": "demo-klinikum-F0-S009"
+  },
+  {
+   "id": "B-F0-17",
+   "floor_id": "demo-klinikum-F0",
+   "x": 52.25,
+   "y": -1.75,
+   "space_id": "demo-klinikum-F0-S010"
+  },
+  {
+   "id": "B-F0-18",
+   "floor_id": "demo-klinikum-F0",
+   "x": 61.0,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F0-S011"
+  },
+  {
+   "id": "B-F0-19",
+   "floor_id": "demo-klinikum-F0",
+   "x": 67.0,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F0-S012"
+  },
+  {
+   "id": "B-F0-20",
+   "floor_id": "demo-klinikum-F0",
+   "x": 1.0,
+   "y": 13.25,
+   "space_id": "demo-klinikum-F0-S013"
+  },
+  {
+   "id": "B-F0-21",
+   "floor_id": "demo-klinikum-F0",
+   "x": 7.3,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F0-S014"
+  },
+  {
+   "id": "B-F0-22",
+   "floor_id": "demo-klinikum-F0",
+   "x": 14.3,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F0-S015"
+  },
+  {
+   "id": "B-F0-23",
+   "floor_id": "demo-klinikum-F0",
+   "x": 22.3,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F0-S016"
+  },
+  {
+   "id": "B-F0-24",
+   "floor_id": "demo-klinikum-F0",
+   "x": 33.5,
+   "y": 13.5,
+   "space_id": "demo-klinikum-F0-S017"
+  },
+  {
+   "id": "B-F0-25",
+   "floor_id": "demo-klinikum-F0",
+   "x": 33.5,
+   "y": 16.5,
+   "space_id": "demo-klinikum-F0-S018"
+  },
+  {
+   "id": "B-F0-26",
+   "floor_id": "demo-klinikum-F0",
+   "x": 37.5,
+   "y": 16.5,
+   "space_id": "demo-klinikum-F0-S019"
+  },
+  {
+   "id": "B-F0-27",
+   "floor_id": "demo-klinikum-F0",
+   "x": 73.5,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F0-S020"
+  },
+  {
+   "id": "B-F0-28",
+   "floor_id": "demo-klinikum-F0",
+   "x": 44.0,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F0-S021"
+  },
+  {
+   "id": "B-F0-29",
+   "floor_id": "demo-klinikum-F0",
+   "x": 51.0,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F0-S022"
+  },
+  {
+   "id": "B-F0-30",
+   "floor_id": "demo-klinikum-F0",
+   "x": 57.0,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F0-S023"
+  },
+  {
+   "id": "B-F0-31",
+   "floor_id": "demo-klinikum-F0",
+   "x": 64.0,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F0-S024"
+  },
+  {
+   "id": "B-F0-32",
+   "floor_id": "demo-klinikum-F0",
+   "x": 55.75,
+   "y": -1.75,
+   "space_id": "demo-klinikum-F0-S025"
+  },
+  {
+   "id": "B-F0-33",
+   "floor_id": "demo-klinikum-F0",
+   "x": 3.15,
+   "y": 13.25,
+   "space_id": "demo-klinikum-F0-S026"
+  },
+  {
+   "id": "B-F0-34",
+   "floor_id": "demo-klinikum-F0",
+   "x": 29.15,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F0-S027"
+  },
+  {
+   "id": "B-F0-35",
+   "floor_id": "demo-klinikum-F0",
+   "x": 39.0,
+   "y": 7.75,
+   "space_id": "demo-klinikum-F0-S028"
+  },
+  {
+   "id": "B-F0-36",
+   "floor_id": "demo-klinikum-F0",
+   "x": 70.0,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F0-S029"
+  },
+  {
+   "id": "B-F0-37",
+   "floor_id": "demo-klinikum-F0",
+   "x": 71.0,
+   "y": 7.75,
+   "space_id": "demo-klinikum-F0-S030"
+  },
+  {
+   "id": "B-F1-01",
+   "floor_id": "demo-klinikum-F1",
+   "x": 5.14,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F1-S001"
+  },
+  {
+   "id": "B-F1-02",
+   "floor_id": "demo-klinikum-F1",
+   "x": 15.43,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F1-S001"
+  },
+  {
+   "id": "B-F1-03",
+   "floor_id": "demo-klinikum-F1",
+   "x": 25.71,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F1-S001"
+  },
+  {
+   "id": "B-F1-04",
+   "floor_id": "demo-klinikum-F1",
+   "x": 36.0,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F1-S001"
+  },
+  {
+   "id": "B-F1-05",
+   "floor_id": "demo-klinikum-F1",
+   "x": 46.29,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F1-S001"
+  },
+  {
+   "id": "B-F1-06",
+   "floor_id": "demo-klinikum-F1",
+   "x": 56.57,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F1-S001"
+  },
+  {
+   "id": "B-F1-07",
+   "floor_id": "demo-klinikum-F1",
+   "x": 66.86,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F1-S001"
+  },
+  {
+   "id": "B-F1-08",
+   "floor_id": "demo-klinikum-F1",
+   "x": 3.0,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F1-S002"
+  },
+  {
+   "id": "B-F1-09",
+   "floor_id": "demo-klinikum-F1",
+   "x": 7.9,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F1-S003"
+  },
+  {
+   "id": "B-F1-10",
+   "floor_id": "demo-klinikum-F1",
+   "x": 11.7,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F1-S004"
+  },
+  {
+   "id": "B-F1-11",
+   "floor_id": "demo-klinikum-F1",
+   "x": 15.5,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F1-S005"
+  },
+  {
+   "id": "B-F1-12",
+   "floor_id": "demo-klinikum-F1",
+   "x": 19.3,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F1-S006"
+  },
+  {
+   "id": "B-F1-13",
+   "floor_id": "demo-klinikum-F1",
+   "x": 23.1,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F1-S007"
+  },
+  {
+   "id": "B-F1-14",
+   "floor_id": "demo-klinikum-F1",
+   "x": 26.9,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F1-S008"
+  },
+  {
+   "id": "B-F1-15",
+   "floor_id": "demo-klinikum-F1",
+   "x": 31.8,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F1-S009"
+  },
+  {
+   "id": "B-F1-16",
+   "floor_id": "demo-klinikum-F1",
+   "x": 36.3,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F1-S010"
+  },
+  {
+   "id": "B-F1-17",
+   "floor_id": "demo-klinikum-F1",
+   "x": 39.7,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F1-S011"
+  },
+  {
+   "id": "B-F1-18",
+   "floor_id": "demo-klinikum-F1",
+   "x": 43.5,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F1-S012"
+  },
+  {
+   "id": "B-F1-19",
+   "floor_id": "demo-klinikum-F1",
+   "x": 47.3,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F1-S013"
+  },
+  {
+   "id": "B-F1-20",
+   "floor_id": "demo-klinikum-F1",
+   "x": 51.1,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F1-S014"
+  },
+  {
+   "id": "B-F1-21",
+   "floor_id": "demo-klinikum-F1",
+   "x": 54.9,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F1-S015"
+  },
+  {
+   "id": "B-F1-22",
+   "floor_id": "demo-klinikum-F1",
+   "x": 58.7,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F1-S016"
+  },
+  {
+   "id": "B-F1-23",
+   "floor_id": "demo-klinikum-F1",
+   "x": 62.5,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F1-S017"
+  },
+  {
+   "id": "B-F1-24",
+   "floor_id": "demo-klinikum-F1",
+   "x": 66.3,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F1-S018"
+  },
+  {
+   "id": "B-F1-25",
+   "floor_id": "demo-klinikum-F1",
+   "x": 1.0,
+   "y": 13.25,
+   "space_id": "demo-klinikum-F1-S019"
+  },
+  {
+   "id": "B-F1-26",
+   "floor_id": "demo-klinikum-F1",
+   "x": 6.75,
+   "y": 13.5,
+   "space_id": "demo-klinikum-F1-S020"
+  },
+  {
+   "id": "B-F1-27",
+   "floor_id": "demo-klinikum-F1",
+   "x": 11.1,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F1-S021"
+  },
+  {
+   "id": "B-F1-28",
+   "floor_id": "demo-klinikum-F1",
+   "x": 14.9,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F1-S022"
+  },
+  {
+   "id": "B-F1-29",
+   "floor_id": "demo-klinikum-F1",
+   "x": 18.7,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F1-S023"
+  },
+  {
+   "id": "B-F1-30",
+   "floor_id": "demo-klinikum-F1",
+   "x": 22.5,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F1-S024"
+  },
+  {
+   "id": "B-F1-31",
+   "floor_id": "demo-klinikum-F1",
+   "x": 26.3,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F1-S025"
+  },
+  {
+   "id": "B-F1-32",
+   "floor_id": "demo-klinikum-F1",
+   "x": 30.1,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F1-S026"
+  },
+  {
+   "id": "B-F1-33",
+   "floor_id": "demo-klinikum-F1",
+   "x": 33.5,
+   "y": 13.5,
+   "space_id": "demo-klinikum-F1-S027"
+  },
+  {
+   "id": "B-F1-34",
+   "floor_id": "demo-klinikum-F1",
+   "x": 33.5,
+   "y": 16.5,
+   "space_id": "demo-klinikum-F1-S028"
+  },
+  {
+   "id": "B-F1-35",
+   "floor_id": "demo-klinikum-F1",
+   "x": 37.5,
+   "y": 16.5,
+   "space_id": "demo-klinikum-F1-S029"
+  },
+  {
+   "id": "B-F1-36",
+   "floor_id": "demo-klinikum-F1",
+   "x": 73.5,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F1-S030"
+  },
+  {
+   "id": "B-F1-37",
+   "floor_id": "demo-klinikum-F1",
+   "x": 42.0,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F1-S031"
+  },
+  {
+   "id": "B-F1-38",
+   "floor_id": "demo-klinikum-F1",
+   "x": 45.5,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F1-S032"
+  },
+  {
+   "id": "B-F1-39",
+   "floor_id": "demo-klinikum-F1",
+   "x": 48.9,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F1-S033"
+  },
+  {
+   "id": "B-F1-40",
+   "floor_id": "demo-klinikum-F1",
+   "x": 52.7,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F1-S034"
+  },
+  {
+   "id": "B-F1-41",
+   "floor_id": "demo-klinikum-F1",
+   "x": 56.5,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F1-S035"
+  },
+  {
+   "id": "B-F1-42",
+   "floor_id": "demo-klinikum-F1",
+   "x": 60.3,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F1-S036"
+  },
+  {
+   "id": "B-F1-43",
+   "floor_id": "demo-klinikum-F1",
+   "x": 64.1,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F1-S037"
+  },
+  {
+   "id": "B-F1-44",
+   "floor_id": "demo-klinikum-F1",
+   "x": 67.9,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F1-S038"
+  },
+  {
+   "id": "B-F1-45",
+   "floor_id": "demo-klinikum-F1",
+   "x": 70.1,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F1-S039"
+  },
+  {
+   "id": "B-F1-46",
+   "floor_id": "demo-klinikum-F1",
+   "x": 3.15,
+   "y": 13.25,
+   "space_id": "demo-klinikum-F1-S040"
+  },
+  {
+   "id": "B-F1-47",
+   "floor_id": "demo-klinikum-F1",
+   "x": 70.9,
+   "y": 13.25,
+   "space_id": "demo-klinikum-F1-S041"
+  },
+  {
+   "id": "B-F2-01",
+   "floor_id": "demo-klinikum-F2",
+   "x": 5.14,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F2-S001"
+  },
+  {
+   "id": "B-F2-02",
+   "floor_id": "demo-klinikum-F2",
+   "x": 15.43,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F2-S001"
+  },
+  {
+   "id": "B-F2-03",
+   "floor_id": "demo-klinikum-F2",
+   "x": 25.71,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F2-S001"
+  },
+  {
+   "id": "B-F2-04",
+   "floor_id": "demo-klinikum-F2",
+   "x": 36.0,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F2-S001"
+  },
+  {
+   "id": "B-F2-05",
+   "floor_id": "demo-klinikum-F2",
+   "x": 46.29,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F2-S001"
+  },
+  {
+   "id": "B-F2-06",
+   "floor_id": "demo-klinikum-F2",
+   "x": 56.57,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F2-S001"
+  },
+  {
+   "id": "B-F2-07",
+   "floor_id": "demo-klinikum-F2",
+   "x": 66.86,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F2-S001"
+  },
+  {
+   "id": "B-F2-08",
+   "floor_id": "demo-klinikum-F2",
+   "x": 3.0,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F2-S002"
+  },
+  {
+   "id": "B-F2-09",
+   "floor_id": "demo-klinikum-F2",
+   "x": 7.9,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F2-S003"
+  },
+  {
+   "id": "B-F2-10",
+   "floor_id": "demo-klinikum-F2",
+   "x": 11.7,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F2-S004"
+  },
+  {
+   "id": "B-F2-11",
+   "floor_id": "demo-klinikum-F2",
+   "x": 15.5,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F2-S005"
+  },
+  {
+   "id": "B-F2-12",
+   "floor_id": "demo-klinikum-F2",
+   "x": 19.3,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F2-S006"
+  },
+  {
+   "id": "B-F2-13",
+   "floor_id": "demo-klinikum-F2",
+   "x": 23.1,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F2-S007"
+  },
+  {
+   "id": "B-F2-14",
+   "floor_id": "demo-klinikum-F2",
+   "x": 26.9,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F2-S008"
+  },
+  {
+   "id": "B-F2-15",
+   "floor_id": "demo-klinikum-F2",
+   "x": 31.8,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F2-S009"
+  },
+  {
+   "id": "B-F2-16",
+   "floor_id": "demo-klinikum-F2",
+   "x": 36.3,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F2-S010"
+  },
+  {
+   "id": "B-F2-17",
+   "floor_id": "demo-klinikum-F2",
+   "x": 39.7,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F2-S011"
+  },
+  {
+   "id": "B-F2-18",
+   "floor_id": "demo-klinikum-F2",
+   "x": 43.5,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F2-S012"
+  },
+  {
+   "id": "B-F2-19",
+   "floor_id": "demo-klinikum-F2",
+   "x": 47.3,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F2-S013"
+  },
+  {
+   "id": "B-F2-20",
+   "floor_id": "demo-klinikum-F2",
+   "x": 51.1,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F2-S014"
+  },
+  {
+   "id": "B-F2-21",
+   "floor_id": "demo-klinikum-F2",
+   "x": 54.9,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F2-S015"
+  },
+  {
+   "id": "B-F2-22",
+   "floor_id": "demo-klinikum-F2",
+   "x": 58.7,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F2-S016"
+  },
+  {
+   "id": "B-F2-23",
+   "floor_id": "demo-klinikum-F2",
+   "x": 62.5,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F2-S017"
+  },
+  {
+   "id": "B-F2-24",
+   "floor_id": "demo-klinikum-F2",
+   "x": 66.3,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F2-S018"
+  },
+  {
+   "id": "B-F2-25",
+   "floor_id": "demo-klinikum-F2",
+   "x": 1.0,
+   "y": 13.25,
+   "space_id": "demo-klinikum-F2-S019"
+  },
+  {
+   "id": "B-F2-26",
+   "floor_id": "demo-klinikum-F2",
+   "x": 6.75,
+   "y": 13.5,
+   "space_id": "demo-klinikum-F2-S020"
+  },
+  {
+   "id": "B-F2-27",
+   "floor_id": "demo-klinikum-F2",
+   "x": 11.1,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F2-S021"
+  },
+  {
+   "id": "B-F2-28",
+   "floor_id": "demo-klinikum-F2",
+   "x": 14.9,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F2-S022"
+  },
+  {
+   "id": "B-F2-29",
+   "floor_id": "demo-klinikum-F2",
+   "x": 18.7,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F2-S023"
+  },
+  {
+   "id": "B-F2-30",
+   "floor_id": "demo-klinikum-F2",
+   "x": 22.5,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F2-S024"
+  },
+  {
+   "id": "B-F2-31",
+   "floor_id": "demo-klinikum-F2",
+   "x": 26.3,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F2-S025"
+  },
+  {
+   "id": "B-F2-32",
+   "floor_id": "demo-klinikum-F2",
+   "x": 30.1,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F2-S026"
+  },
+  {
+   "id": "B-F2-33",
+   "floor_id": "demo-klinikum-F2",
+   "x": 33.5,
+   "y": 13.5,
+   "space_id": "demo-klinikum-F2-S027"
+  },
+  {
+   "id": "B-F2-34",
+   "floor_id": "demo-klinikum-F2",
+   "x": 33.5,
+   "y": 16.5,
+   "space_id": "demo-klinikum-F2-S028"
+  },
+  {
+   "id": "B-F2-35",
+   "floor_id": "demo-klinikum-F2",
+   "x": 37.5,
+   "y": 16.5,
+   "space_id": "demo-klinikum-F2-S029"
+  },
+  {
+   "id": "B-F2-36",
+   "floor_id": "demo-klinikum-F2",
+   "x": 73.5,
+   "y": 10.5,
+   "space_id": "demo-klinikum-F2-S030"
+  },
+  {
+   "id": "B-F2-37",
+   "floor_id": "demo-klinikum-F2",
+   "x": 42.0,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F2-S031"
+  },
+  {
+   "id": "B-F2-38",
+   "floor_id": "demo-klinikum-F2",
+   "x": 45.5,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F2-S032"
+  },
+  {
+   "id": "B-F2-39",
+   "floor_id": "demo-klinikum-F2",
+   "x": 48.9,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F2-S033"
+  },
+  {
+   "id": "B-F2-40",
+   "floor_id": "demo-klinikum-F2",
+   "x": 52.7,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F2-S034"
+  },
+  {
+   "id": "B-F2-41",
+   "floor_id": "demo-klinikum-F2",
+   "x": 56.5,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F2-S035"
+  },
+  {
+   "id": "B-F2-42",
+   "floor_id": "demo-klinikum-F2",
+   "x": 60.3,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F2-S036"
+  },
+  {
+   "id": "B-F2-43",
+   "floor_id": "demo-klinikum-F2",
+   "x": 64.1,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F2-S037"
+  },
+  {
+   "id": "B-F2-44",
+   "floor_id": "demo-klinikum-F2",
+   "x": 67.9,
+   "y": 15.0,
+   "space_id": "demo-klinikum-F2-S038"
+  },
+  {
+   "id": "B-F2-45",
+   "floor_id": "demo-klinikum-F2",
+   "x": 70.1,
+   "y": 6.0,
+   "space_id": "demo-klinikum-F2-S039"
+  },
+  {
+   "id": "B-F2-46",
+   "floor_id": "demo-klinikum-F2",
+   "x": 3.15,
+   "y": 13.25,
+   "space_id": "demo-klinikum-F2-S040"
+  },
+  {
+   "id": "B-F2-47",
+   "floor_id": "demo-klinikum-F2",
+   "x": 70.9,
+   "y": 13.25,
+   "space_id": "demo-klinikum-F2-S041"
+  }
+ ],
+ "patients": [
+  {
+   "id": "P001",
+   "number": "100231",
+   "name": "Anna Becker",
+   "room_id": "demo-klinikum-F2-S006",
+   "ward": "Ward 2A",
+   "pager_id": "PG-01",
+   "tag_id": "T-P001",
+   "pager_tag_id": "T-PG-01",
+   "step_free": false,
+   "visit_code": "4711",
+   "appointment": {
+    "space_id": "demo-klinikum-F0-S021",
+    "start_offset_min": 30,
+    "label": "Chest X-ray"
+   }
+  },
+  {
+   "id": "P002",
+   "number": "100245",
+   "name": "Klaus Hoffmann",
+   "room_id": "demo-klinikum-F2-S012",
+   "ward": "Ward 2A",
+   "pager_id": "PG-02",
+   "tag_id": "T-P002",
+   "pager_tag_id": "T-PG-02",
+   "step_free": true,
+   "visit_code": "2580",
+   "appointment": {
+    "space_id": "demo-klinikum-F0-S022",
+    "start_offset_min": 15,
+    "label": "Knee X-ray"
+   }
+  },
+  {
+   "id": "P003",
+   "number": "100262",
+   "name": "Ingrid Schulz",
+   "room_id": "demo-klinikum-F2-S016",
+   "ward": "Ward 2A",
+   "pager_id": "PG-03",
+   "tag_id": "T-P003",
+   "pager_tag_id": "T-PG-03",
+   "step_free": true,
+   "visit_code": "9134",
+   "appointment": {
+    "space_id": "demo-klinikum-F0-S023",
+    "start_offset_min": 15,
+    "label": "Hip X-ray"
+   }
+  },
+  {
+   "id": "P004",
+   "number": "100278",
+   "name": "Mehmet Yilmaz",
+   "room_id": "demo-klinikum-F2-S022",
+   "ward": "Ward 2A",
+   "pager_id": "PG-04",
+   "tag_id": "T-P004",
+   "pager_tag_id": "T-PG-04",
+   "step_free": false,
+   "visit_code": "3307",
+   "appointment": {
+    "space_id": "demo-klinikum-F0-S024",
+    "start_offset_min": 16,
+    "label": "CT abdomen"
+   }
+  },
+  {
+   "id": "P005",
+   "number": "100293",
+   "name": "Sabine Wagner",
+   "room_id": "demo-klinikum-F2-S034",
+   "ward": "Ward 2A",
+   "pager_id": "PG-05",
+   "tag_id": "T-P005",
+   "pager_tag_id": "T-PG-05",
+   "step_free": true,
+   "visit_code": "6652",
+   "appointment": {
+    "space_id": "demo-klinikum-F0-S015",
+    "start_offset_min": 16,
+    "label": "Blood test"
+   }
+  },
+  {
+   "id": "P006",
+   "number": "100301",
+   "name": "Josef Huber",
+   "room_id": "demo-klinikum-F2-S037",
+   "ward": "Ward 2A",
+   "pager_id": "PG-06",
+   "tag_id": "T-P006",
+   "pager_tag_id": "T-PG-06",
+   "step_free": false,
+   "visit_code": "8820",
+   "appointment": {
+    "space_id": "demo-klinikum-F0-S016",
+    "start_offset_min": 16,
+    "label": "Physiotherapy"
+   }
+  },
+  {
+   "id": "P007",
+   "number": "100318",
+   "name": "Gertrud Maier",
+   "room_id": "demo-klinikum-F1-S005",
+   "ward": "Ward 1A",
+   "pager_id": "PG-07",
+   "tag_id": "T-P007",
+   "pager_tag_id": "T-PG-07",
+   "step_free": true,
+   "visit_code": "1945",
+   "appointment": {
+    "space_id": "demo-klinikum-F0-S015",
+    "start_offset_min": 6,
+    "label": "Blood test"
+   }
+  },
+  {
+   "id": "P008",
+   "number": "100324",
+   "name": "Lukas Fischer",
+   "room_id": "demo-klinikum-F1-S015",
+   "ward": "Ward 1A",
+   "pager_id": "PG-08",
+   "tag_id": "T-P008",
+   "pager_tag_id": "T-PG-08",
+   "step_free": false,
+   "visit_code": "5038",
+   "appointment": {
+    "space_id": "demo-klinikum-F0-S022",
+    "start_offset_min": 45,
+    "label": "Shoulder X-ray"
+   }
+  },
+  {
+   "id": "P009",
+   "number": "100337",
+   "name": "Elif Demir",
+   "room_id": "demo-klinikum-F1-S024",
+   "ward": "Ward 1A",
+   "pager_id": "PG-09",
+   "tag_id": "T-P009",
+   "pager_tag_id": "T-PG-09",
+   "step_free": false,
+   "visit_code": "7261",
+   "appointment": null
+  },
+  {
+   "id": "P010",
+   "number": "100349",
+   "name": "Franz Bauer",
+   "room_id": "demo-klinikum-F1-S034",
+   "ward": "Ward 1A",
+   "pager_id": "PG-10",
+   "tag_id": "T-P010",
+   "pager_tag_id": "T-PG-10",
+   "step_free": true,
+   "visit_code": "4419",
+   "appointment": {
+    "space_id": "demo-klinikum-F0-S016",
+    "start_offset_min": 60,
+    "label": "Physiotherapy"
+   }
+  },
+  {
+   "id": "P011",
+   "number": "100356",
+   "name": "Monika Schneider",
+   "room_id": "demo-klinikum-F0-S002",
+   "ward": "Outpatients",
+   "pager_id": "PG-11",
+   "tag_id": "T-P011",
+   "pager_tag_id": "T-PG-11",
+   "step_free": false,
+   "visit_code": "3826",
+   "appointment": {
+    "space_id": "demo-klinikum-F0-S024",
+    "start_offset_min": 10,
+    "label": "CT head"
+   }
+  },
+  {
+   "id": "P012",
+   "number": "100362",
+   "name": "Theo Wolf",
+   "room_id": "demo-klinikum-F0-S008",
+   "ward": "Emergency",
+   "pager_id": "PG-12",
+   "tag_id": "T-P012",
+   "pager_tag_id": "T-PG-12",
+   "step_free": false,
+   "visit_code": "6190",
+   "appointment": null
+  }
+ ],
+ "staff": [
+  {
+   "id": "S01",
+   "tag_id": "T-S01",
+   "label": "Dr. Weber",
+   "role": "Radiology",
+   "space_id": "demo-klinikum-F0-S021",
+   "home_id": "demo-klinikum-F0-S021",
+   "pager_id": "PG-S01",
+   "pager_tag_id": "T-PG-S01",
+   "routine": [
+    {
+     "at": "07:30",
+     "space_id": "demo-klinikum-F0-S021"
+    },
+    {
+     "at": "08:00",
+     "space_id": "demo-klinikum-F0-S024"
+    },
+    {
+     "at": "08:30",
+     "space_id": "demo-klinikum-F0-S021"
+    },
+    {
+     "at": "09:00",
+     "space_id": "demo-klinikum-F1-S002",
+     "asset_id": "demo-klinikum-A0162"
+    },
+    {
+     "at": "09:20",
+     "space_id": "demo-klinikum-F0-S021"
+    },
+    {
+     "at": "10:00",
+     "space_id": "demo-klinikum-F0-S022"
+    },
+    {
+     "at": "10:30",
+     "space_id": "demo-klinikum-F0-S021"
+    },
+    {
+     "at": "12:00",
+     "space_id": "demo-klinikum-F0-S005"
+    },
+    {
+     "at": "12:40",
+     "space_id": "demo-klinikum-F0-S021"
+    },
+    {
+     "at": "14:00",
+     "space_id": "demo-klinikum-F1-S002",
+     "asset_id": "demo-klinikum-A0162"
+    },
+    {
+     "at": "14:20",
+     "space_id": "demo-klinikum-F0-S021"
+    },
+    {
+     "at": "15:00",
+     "space_id": "demo-klinikum-F0-S023"
+    },
+    {
+     "at": "15:30",
+     "space_id": "demo-klinikum-F0-S021"
+    },
+    {
+     "at": "16:20",
+     "space_id": "demo-klinikum-F1-S002",
+     "asset_id": "demo-klinikum-A0162"
+    },
+    {
+     "at": "16:40",
+     "space_id": "demo-klinikum-F0-S021"
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "tag_id": "T-S02",
+   "label": "Jonas Keller",
+   "role": "Nursing",
+   "space_id": "demo-klinikum-F2-S009",
+   "home_id": "demo-klinikum-F2-S009",
+   "pager_id": "PG-S02",
+   "pager_tag_id": "T-PG-S02",
+   "routine": [
+    {
+     "at": "06:00",
+     "space_id": "demo-klinikum-F2-S009"
+    },
+    {
+     "at": "06:30",
+     "space_id": "demo-klinikum-F2-S006"
+    },
+    {
+     "at": "06:50",
+     "space_id": "demo-klinikum-F2-S012"
+    },
+    {
+     "at": "07:10",
+     "space_id": "demo-klinikum-F2-S016"
+    },
+    {
+     "at": "07:30",
+     "space_id": "demo-klinikum-F2-S010"
+    },
+    {
+     "at": "07:50",
+     "space_id": "demo-klinikum-F2-S009"
+    },
+    {
+     "at": "09:00",
+     "space_id": "demo-klinikum-F2-S022"
+    },
+    {
+     "at": "09:20",
+     "space_id": "demo-klinikum-F2-S034"
+    },
+    {
+     "at": "09:40",
+     "space_id": "demo-klinikum-F2-S037"
+    },
+    {
+     "at": "10:00",
+     "space_id": "demo-klinikum-F2-S009"
+    },
+    {
+     "at": "12:00",
+     "space_id": "demo-klinikum-F2-S002"
+    },
+    {
+     "at": "12:30",
+     "space_id": "demo-klinikum-F2-S009"
+    },
+    {
+     "at": "14:00",
+     "space_id": "demo-klinikum-F2-S032"
+    },
+    {
+     "at": "14:20",
+     "space_id": "demo-klinikum-F2-S009"
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "tag_id": "T-S03",
+   "label": "Lena Vogt",
+   "role": "Nursing",
+   "space_id": "demo-klinikum-F1-S009",
+   "home_id": "demo-klinikum-F1-S009",
+   "routine": [
+    {
+     "at": "06:00",
+     "space_id": "demo-klinikum-F1-S009"
+    },
+    {
+     "at": "06:30",
+     "space_id": "demo-klinikum-F1-S005"
+    },
+    {
+     "at": "06:50",
+     "space_id": "demo-klinikum-F1-S015"
+    },
+    {
+     "at": "07:10",
+     "space_id": "demo-klinikum-F1-S024"
+    },
+    {
+     "at": "07:30",
+     "space_id": "demo-klinikum-F1-S010"
+    },
+    {
+     "at": "07:50",
+     "space_id": "demo-klinikum-F1-S009"
+    },
+    {
+     "at": "09:00",
+     "space_id": "demo-klinikum-F1-S034"
+    },
+    {
+     "at": "09:20",
+     "space_id": "demo-klinikum-F1-S032"
+    },
+    {
+     "at": "09:40",
+     "space_id": "demo-klinikum-F1-S009"
+    },
+    {
+     "at": "13:00",
+     "space_id": "demo-klinikum-F1-S007"
+    },
+    {
+     "at": "13:20",
+     "space_id": "demo-klinikum-F1-S009"
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "tag_id": "T-S04",
+   "label": "Ali Kaya",
+   "role": "Transport",
+   "space_id": "demo-klinikum-F0-S002",
+   "home_id": "demo-klinikum-F0-S002",
+   "pager_id": "PG-S03",
+   "pager_tag_id": "T-PG-S03",
+   "routine": [
+    {
+     "at": "07:00",
+     "space_id": "demo-klinikum-F0-S002"
+    },
+    {
+     "at": "08:00",
+     "space_id": "demo-klinikum-F2-S006"
+    },
+    {
+     "at": "08:20",
+     "space_id": "demo-klinikum-F0-S021"
+    },
+    {
+     "at": "09:00",
+     "space_id": "demo-klinikum-F1-S015"
+    },
+    {
+     "at": "09:20",
+     "space_id": "demo-klinikum-F0-S022"
+    },
+    {
+     "at": "10:00",
+     "space_id": "demo-klinikum-F0-S002"
+    },
+    {
+     "at": "11:00",
+     "space_id": "demo-klinikum-F2-S022"
+    },
+    {
+     "at": "11:20",
+     "space_id": "demo-klinikum-F0-S024"
+    },
+    {
+     "at": "12:00",
+     "space_id": "demo-klinikum-F0-S002"
+    },
+    {
+     "at": "13:30",
+     "space_id": "demo-klinikum-F0-S006"
+    },
+    {
+     "at": "13:50",
+     "space_id": "demo-klinikum-F1-S032"
+    },
+    {
+     "at": "14:30",
+     "space_id": "demo-klinikum-F0-S002"
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "tag_id": "T-S05",
+   "label": "Maria Brandt",
+   "role": "Lab",
+   "space_id": "demo-klinikum-F0-S015",
+   "home_id": "demo-klinikum-F0-S015",
+   "routine": [
+    {
+     "at": "07:00",
+     "space_id": "demo-klinikum-F0-S015"
+    },
+    {
+     "at": "07:30",
+     "space_id": "demo-klinikum-F1-S009"
+    },
+    {
+     "at": "07:50",
+     "space_id": "demo-klinikum-F2-S009"
+    },
+    {
+     "at": "08:15",
+     "space_id": "demo-klinikum-F0-S015"
+    },
+    {
+     "at": "10:00",
+     "space_id": "demo-klinikum-F0-S006"
+    },
+    {
+     "at": "10:20",
+     "space_id": "demo-klinikum-F0-S015"
+    },
+    {
+     "at": "13:00",
+     "space_id": "demo-klinikum-F1-S009"
+    },
+    {
+     "at": "13:20",
+     "space_id": "demo-klinikum-F2-S009"
+    },
+    {
+     "at": "13:45",
+     "space_id": "demo-klinikum-F0-S015"
+    },
+    {
+     "at": "15:00",
+     "space_id": "demo-klinikum-F0-S006"
+    },
+    {
+     "at": "15:20",
+     "space_id": "demo-klinikum-F0-S015"
+    }
+   ]
+  }
+ ],
+ "asset_tags": [
+  {
+   "tag_id": "T-A-PUMP-01",
+   "asset_id": "demo-klinikum-A0284"
+  },
+  {
+   "tag_id": "T-A-PUMP-02",
+   "asset_id": "demo-klinikum-A0285"
+  },
+  {
+   "tag_id": "T-A-PUMP-03",
+   "asset_id": "demo-klinikum-A0286"
+  },
+  {
+   "tag_id": "T-A-PUMP-04",
+   "asset_id": "demo-klinikum-A0287"
+  },
+  {
+   "tag_id": "T-A-PUMP-05",
+   "asset_id": "demo-klinikum-A0288"
+  },
+  {
+   "tag_id": "T-A-PUMP-06",
+   "asset_id": "demo-klinikum-A0289"
+  },
+  {
+   "tag_id": "T-A-PUMP-07",
+   "asset_id": "demo-klinikum-A0290"
+  },
+  {
+   "tag_id": "T-A-PUMP-08",
+   "asset_id": "demo-klinikum-A0291"
+  },
+  {
+   "tag_id": "T-A-PUMP-09",
+   "asset_id": "demo-klinikum-A0292"
+  },
+  {
+   "tag_id": "T-A-PUMP-10",
+   "asset_id": "demo-klinikum-A0293"
+  },
+  {
+   "tag_id": "T-A-PUMP-11",
+   "asset_id": "demo-klinikum-A0294"
+  },
+  {
+   "tag_id": "T-A-PUMP-12",
+   "asset_id": "demo-klinikum-A0295"
+  },
+  {
+   "tag_id": "T-A-PUMP-13",
+   "asset_id": "demo-klinikum-A0296"
+  },
+  {
+   "tag_id": "T-A-PUMP-14",
+   "asset_id": "demo-klinikum-A0297"
+  },
+  {
+   "tag_id": "T-A-PUMP-15",
+   "asset_id": "demo-klinikum-A0298"
+  },
+  {
+   "tag_id": "T-A-RS-01",
+   "asset_id": "demo-klinikum-A0014"
+  },
+  {
+   "tag_id": "T-A-RS-02",
+   "asset_id": "demo-klinikum-A0015"
+  },
+  {
+   "tag_id": "T-A-RS-03",
+   "asset_id": "demo-klinikum-A0048"
+  },
+  {
+   "tag_id": "T-A-RS-04",
+   "asset_id": "demo-klinikum-A0049"
+  },
+  {
+   "tag_id": "T-A-RS-05",
+   "asset_id": "demo-klinikum-A0167"
+  },
+  {
+   "tag_id": "T-A-RS-06",
+   "asset_id": "demo-klinikum-A0281"
+  }
+ ],
+ "in_use": [
+  "demo-klinikum-A0284",
+  "demo-klinikum-A0286",
+  "demo-klinikum-A0287",
+  "demo-klinikum-A0291",
+  "demo-klinikum-A0292",
+  "demo-klinikum-A0296",
+  "demo-klinikum-A0297",
+  "demo-klinikum-A0298",
+  "demo-klinikum-A0056",
+  "demo-klinikum-A0057",
+  "demo-klinikum-A0060",
+  "demo-klinikum-A0064",
+  "demo-klinikum-A0065",
+  "demo-klinikum-A0068",
+  "demo-klinikum-A0069",
+  "demo-klinikum-A0072",
+  "demo-klinikum-A0075",
+  "demo-klinikum-A0076",
+  "demo-klinikum-A0080",
+  "demo-klinikum-A0083",
+  "demo-klinikum-A0084",
+  "demo-klinikum-A0087",
+  "demo-klinikum-A0088",
+  "demo-klinikum-A0091",
+  "demo-klinikum-A0094",
+  "demo-klinikum-A0095",
+  "demo-klinikum-A0098",
+  "demo-klinikum-A0102",
+  "demo-klinikum-A0103",
+  "demo-klinikum-A0106",
+  "demo-klinikum-A0107",
+  "demo-klinikum-A0110",
+  "demo-klinikum-A0113",
+  "demo-klinikum-A0117",
+  "demo-klinikum-A0118",
+  "demo-klinikum-A0121",
+  "demo-klinikum-A0122",
+  "demo-klinikum-A0125",
+  "demo-klinikum-A0126",
+  "demo-klinikum-A0129",
+  "demo-klinikum-A0134",
+  "demo-klinikum-A0137",
+  "demo-klinikum-A0138",
+  "demo-klinikum-A0141",
+  "demo-klinikum-A0142",
+  "demo-klinikum-A0145",
+  "demo-klinikum-A0149",
+  "demo-klinikum-A0152",
+  "demo-klinikum-A0153",
+  "demo-klinikum-A0157",
+  "demo-klinikum-A0170",
+  "demo-klinikum-A0174",
+  "demo-klinikum-A0175",
+  "demo-klinikum-A0178",
+  "demo-klinikum-A0179",
+  "demo-klinikum-A0182",
+  "demo-klinikum-A0183",
+  "demo-klinikum-A0186",
+  "demo-klinikum-A0190",
+  "demo-klinikum-A0193",
+  "demo-klinikum-A0194",
+  "demo-klinikum-A0197",
+  "demo-klinikum-A0198",
+  "demo-klinikum-A0201",
+  "demo-klinikum-A0202",
+  "demo-klinikum-A0205",
+  "demo-klinikum-A0208",
+  "demo-klinikum-A0209",
+  "demo-klinikum-A0212",
+  "demo-klinikum-A0213",
+  "demo-klinikum-A0216",
+  "demo-klinikum-A0220",
+  "demo-klinikum-A0221",
+  "demo-klinikum-A0224",
+  "demo-klinikum-A0227",
+  "demo-klinikum-A0228",
+  "demo-klinikum-A0231",
+  "demo-klinikum-A0232",
+  "demo-klinikum-A0235",
+  "demo-klinikum-A0236",
+  "demo-klinikum-A0239",
+  "demo-klinikum-A0243",
+  "demo-klinikum-A0247",
+  "demo-klinikum-A0248",
+  "demo-klinikum-A0251",
+  "demo-klinikum-A0252",
+  "demo-klinikum-A0256",
+  "demo-klinikum-A0259",
+  "demo-klinikum-A0260",
+  "demo-klinikum-A0263",
+  "demo-klinikum-A0266",
+  "demo-klinikum-A0270",
+  "demo-klinikum-A0271",
+  "demo-klinikum-A0001",
+  "demo-klinikum-A0005",
+  "demo-klinikum-A0046",
+  "demo-klinikum-A0053"
+ ],
+ "demo_cases": {
+  "coffee": {
+   "pager_id": "PG-01",
+   "patient_id": "P001",
+   "start": "demo-klinikum-F2-S006",
+   "goal": "demo-klinikum-F0-S021",
+   "nearest_to_start": "demo-klinikum-A0276",
+   "best_detour": "demo-klinikum-F0-S005"
+  },
+  "lift": {
+   "floor_id": "demo-klinikum-F2",
+   "pager_ids": [
+    "PG-02",
+    "PG-03",
+    "PG-04",
+    "PG-05",
+    "PG-06"
+   ],
+   "patient_ids": [
+    "P002",
+    "P003",
+    "P004",
+    "P005",
+    "P006"
+   ]
+  }
+ }
+}

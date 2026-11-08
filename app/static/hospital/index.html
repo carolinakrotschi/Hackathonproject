@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Control Room</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,300..600,0..1,0&display=block" rel="stylesheet">
+<link href="/static/hospital/hospital.css" rel="stylesheet">
+</head>
+<body>
+<header class="topbar">
+  <span class="logo"><span class="ms fill">local_hospital</span></span>
+  <b class="hide-xs">Control Room</b>
+  <label class="bsel"><span class="ms">domain</span><select id="building" aria-label="Hospital"></select></label>
+  <button type="button" class="tbtn" id="uploadOpen" title="Upload plan"><span class="ms">upload_file</span><span class="hide-s">Upload plan</span></button>
+  <span class="spacer"></span>
+  <span class="live" id="live"><i></i><span id="liveText" class="hide-s">Live</span></span>
+  <a href="/hospital/visit" target="_blank" class="hide-s"><span class="ms">person_search</span>Visitors</a>
+</header>
+<main class="lst">
+  <section class="stage-map">
+    <div id="plan"></div>
+    <div class="legend" id="legend"></div>
+    <div class="heat-legend" id="heatLegend" hidden>
+      <div class="heat-bar"></div>
+      <div class="heat-axis"><span>rare</span><span id="heatMax"></span><span>frequent</span></div>
+    </div>
+    <div class="compare" id="compare" hidden>
+      <div class="compare-head">
+        <b id="cmpTitle">Before / after</b>
+        <span class="key"><i class="was"></i>old position</span>
+        <span class="key"><i class="moved"></i>moved</span>
+        <span class="key"><i class="added"></i>new</span>
+        <span class="spacer" style="flex:1"></span>
+        <button class="btn ghost" id="cmpClose" type="button"><span class="ms">close</span>Close</button>
+      </div>
+      <div class="compare-grid">
+        <figure><figcaption><span>Before</span><span class="muted" id="cmpBefore"></span></figcaption><div id="planBefore"></div></figure>
+        <figure><figcaption><span>After</span><span class="muted" id="cmpAfter"></span></figcaption><div id="planAfter"></div></figure>
+      </div>
+    </div>
+  </section>
+  <aside class="panel">
+    <nav class="tabs" role="tablist">
+      <button type="button" data-tab="devices" class="on"><span class="ms">medical_services</span>Devices</button>
+      <button type="button" data-tab="room"><span class="ms">bed</span>Optimize room</button>
+      <button type="button" data-tab="analytics"><span class="ms">insights</span>Analytics</button>
+      <button type="button" data-tab="pager"><span class="ms">vibration</span>Pagers &amp; lifts</button>
+    </nav>
+
+    <div class="tabpane" id="tab-devices">
+      <div class="row">
+        <label class="field"><span>Device</span>
+          <select id="assetType">
+            <option value="infusion_pump">Infusion pump</option>
+            <option value="wheelchair">Wheelchair</option>
+            <option value="bed">Bed</option>
+            <option value="stretcher">Stretcher</option>
+          </select>
+        </label>
+      </div>
+      <h3 id="assetListTitle">All devices</h3>
+      <div class="list" id="assetList"></div>
+    </div>
+
+    <div class="tabpane" id="tab-room" hidden>
+      <label class="field"><span>Room</span><select id="optRoom"></select></label>
+      <div id="optRules"></div>
+      <div class="row">
+        <label class="field"><span>Add</span><select id="optType"></select></label>
+        <label class="field" style="flex:0 1 100px"><span>Quantity</span><input id="optCount" type="number" min="1" value="1" inputmode="numeric"></label>
+      </div>
+      <button class="btn" id="optRun" type="button"><span class="ms">auto_fix_high</span>Calculate proposal</button>
+      <div id="optResult"></div>
+    </div>
+
+    <div class="tabpane" id="tab-analytics" hidden>
+      <h3>Heatmap</h3>
+      <div class="row">
+        <label class="field"><span>Person</span><select id="hmTag"><option value="">All people</option></select></label>
+        <label class="field"><span>Kind</span>
+          <select id="hmKind">
+            <option value="">All</option>
+            <option value="patient">Patients</option>
+            <option value="staff">Staff</option>
+            <option value="asset">Devices</option>
+          </select>
+        </label>
+      </div>
+      <div class="row">
+        <label class="field"><span>Role</span><select id="hmRole"><option value="">All roles</option></select></label>
+        <label class="field"><span>Time range</span>
+          <select id="hmPeriod">
+            <option value="today">Today</option>
+            <option value="week" selected>7 days</option>
+            <option value="custom">Custom</option>
+          </select>
+        </label>
+      </div>
+      <div class="row" id="hmCustom" hidden>
+        <label class="field"><span>From</span><input id="hmSince" type="datetime-local"></label>
+        <label class="field"><span>To</span><input id="hmUntil" type="datetime-local"></label>
+      </div>
+      <label class="check"><input type="checkbox" id="hmLog" checked>Log scale</label>
+      <div class="muted" id="hmState"></div>
+
+      <h3>Recurring routes</h3>
+      <div class="list" id="routines"><div class="item muted">Loading …</div></div>
+
+      <h3>Optimize placement</h3>
+      <div class="list" id="placeAssets"><div class="item muted">Loading …</div></div>
+      <div id="placeResult"></div>
+    </div>
+
+    <div class="tabpane" id="tab-pager" hidden>
+      <h3>Simulator</h3>
+      <div class="row" style="align-items:center">
+        <label class="field" style="flex:0 1 110px"><span>Speed</span>
+          <select id="simFactor">
+            <option value="10">10×</option>
+            <option value="30" selected>30×</option>
+            <option value="60">60×</option>
+          </select>
+        </label>
+        <button class="btn ok" id="simStart" type="button"><span class="ms">play_arrow</span>Start</button>
+        <button class="btn ghost" id="simStop" type="button"><span class="ms">stop</span>Stop</button>
+        <button class="btn danger" id="reset" type="button"><span class="ms">restart_alt</span>Reset</button>
+        <span class="muted" id="simState"></span>
+      </div>
+      <h3>Lift queues</h3>
+      <div id="lifts" class="muted">Loading …</div>
+      <h3>Patients with pagers</h3>
+      <div class="list" id="patients"></div>
+      <h3>Staff with pagers</h3>
+      <div class="list" id="staff"></div>
+    </div>
+  </aside>
+</main>
+<dialog class="sheet" id="upload">
+  <form method="dialog" class="sheet-body" id="uploadForm">
+    <div class="sheet-head"><b>Upload plan</b><button class="icon-plain" value="close" aria-label="Close"><span class="ms">close</span></button></div>
+    <div id="uploadStep">
+      <p class="muted">One image per floor (clean plan or photo, whole sheet in frame). Rooms, doors, stairs and lifts are detected automatically and beacons are placed automatically. Without a readable floor title, order applies: first image = ground floor.</p>
+      <div class="row">
+        <label class="field"><span>Name</span><input id="upName" type="text" placeholder="e.g. North Hospital"></label>
+        <label class="field" style="flex:0 1 130px"><span>Width (m, optional)</span><input id="upWidth" type="number" min="1" step="0.1" inputmode="decimal"></label>
+      </div>
+      <div class="staged" id="upStaged"></div>
+      <div class="row">
+        <label class="btn ghost"><span class="ms">add_photo_alternate</span>Add floor<input id="upFiles" type="file" accept="image/*" multiple hidden></label>
+        <button class="btn" id="upRun" type="button" disabled><span class="ms">auto_fix_high</span>Create building</button>
+      </div>
+    </div>
+    <div id="uploadOut"></div>
+  </form>
+</dialog>
+<script type="module" src="/static/hospital/leitstand.js"></script>
+</body>
+</html>

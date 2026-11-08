@@ -1,0 +1,222 @@
+:root {
+  color-scheme: dark;
+  --bg: #060c12; --screen: #0a121a; --surface: #111d29; --surface-2: #162636; --line: #23384c;
+  --ink: #f4f8fb; --ink-2: #c9d6e2; --muted: #8fa3b6;
+  --go: #3ddc84; --wait: #ffb547; --arrived: #5aa9ff; --idle: #9fb2c4; --search: #2fd4c4; --bad: #ff6b6b; --lift: #b892ff;
+  --route: #38bdf8; --land: #08111a;
+  --accent: var(--idle);
+  --scale: 1;
+  /* Galaxy Z Flip7 cover screen: the rear cameras sit inside the display, bottom-right (percent of the screen, ?cam=WxH[l|r]) */
+  --cam-w: 55; --cam-h: 20;
+  --corner: 30px;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); }
+body {
+  color: var(--ink); font: 600 16px/1.25 "Roboto Flex", Roboto, system-ui, sans-serif;
+  pointer-events: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; touch-action: none;
+}
+[hidden] { display: none !important; }
+.ms {
+  font-family: "Material Symbols Rounded"; font-weight: normal; font-style: normal; font-size: 24px; line-height: 1;
+  display: inline-block; white-space: nowrap; direction: ltr; -webkit-font-smoothing: antialiased;
+  font-variation-settings: "FILL" 1, "wght" 500, "GRAD" 0, "opsz" 24;
+}
+
+.stage { position: fixed; inset: 0; display: grid; place-items: center; }
+.pg {
+  --pg-w: 100vw; --pg-h: 100vh;
+  --pad: clamp(6px, calc(var(--pg-h) * .023), 10px);
+  --gap: clamp(5px, calc(var(--pg-h) * .016), 8px);
+  --in: max(12px, calc(var(--corner) - var(--pad)));
+  --cam-x: calc(var(--pg-w) * var(--cam-w) / 100);
+  --cam-y: calc(var(--pg-h) * var(--cam-h) / 100);
+  position: relative; width: var(--pg-w); height: var(--pg-h); padding: var(--pad);
+  padding-bottom: max(var(--pad), calc(var(--cam-y) + 4px));
+  display: flex; flex-direction: column; gap: var(--gap); background: var(--screen);
+  container-type: size;
+}
+@supports (height: 100dvh) { .pg { --pg-h: 100dvh; } }
+.pg[data-state="go"] { --accent: var(--go); }
+.pg[data-state="go"][data-mode="search"] { --accent: var(--search); }
+.pg[data-state="wait"] { --accent: var(--wait); }
+.pg[data-state="arrived"] { --accent: var(--arrived); }
+.pg[data-state="error"] { --accent: var(--bad); }
+
+body.framed .pg { transform: scale(var(--scale)); }
+body.outline .pg {
+  border-radius: var(--corner);
+  box-shadow: 0 0 0 7px #05080b, 0 0 0 9px #2c3640, 0 0 0 10px #4a5662, 0 40px 90px -20px rgba(0, 0, 0, .8);
+}
+
+/* ---------- camera cut-out ---------- */
+/* Everything stays above the island; the strip beside it is left empty, like Samsung's own cover-screen UI. */
+.cams { position: absolute; right: 0; bottom: 0; width: var(--cam-x); height: var(--cam-y); pointer-events: none; display: none; z-index: 4; }
+html[data-cam-side="l"] .cams { right: auto; left: 0; scale: -1 1; }
+body.outline .cams, body.debug .cams { display: block; }
+body.debug .cams { outline: 1.5px dashed rgba(255, 90, 90, .9); outline-offset: -1px; background: rgba(255, 60, 60, .12); }
+body.outline .cams i {
+  position: absolute; top: 50%; width: min(34%, 84cqh); aspect-ratio: 1; translate: 0 -50%; border-radius: 50%;
+  background: radial-gradient(circle, #1b2a3a 0 14%, #05070a 15% 52%, #10161c 53% 64%, #000 65% 100%);
+  box-shadow: 0 0 0 1.5px #20282f, 0 0 0 4px #000;
+}
+body.outline .cams i:first-child { left: 17%; }
+body.outline .cams i:nth-child(2) { left: 58%; }
+body.outline .cams b {
+  position: absolute; top: 50%; left: 4%; width: 6%; aspect-ratio: 1; translate: 0 -50%; border-radius: 50%;
+  background: radial-gradient(circle, #e9e3cf 0 35%, #8d8774 60%, #2b2a24 100%); box-shadow: 0 0 0 3px #000;
+}
+.dbg {
+  position: absolute; left: 50%; top: 50%; translate: -50% -50%; z-index: 5; padding: 6px 9px; border-radius: 8px;
+  font: 700 12px/1.35 ui-monospace, Menlo, monospace; white-space: pre; color: #fff; background: rgba(0, 0, 0, .8);
+  box-shadow: inset 0 0 0 1px #ff5a5a;
+}
+
+/* ---------- next instruction ---------- */
+.hero {
+  flex: none; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: "icon big mic" "sub sub sub";
+  align-items: center; padding: 8px; border-radius: var(--in) var(--in) 16px 16px; background: var(--surface);
+}
+.hero-icon {
+  grid-area: icon; width: clamp(48px, 16cqi, 76px); aspect-ratio: 1; display: grid; place-items: center; margin-right: clamp(8px, 3cqi, 12px);
+  border-radius: clamp(13px, 4.4cqi, 18px); background: var(--accent); color: #061018; transition: background-color .4s ease;
+}
+.hero-icon .ms { font-size: clamp(36px, 12cqi, 56px); font-variation-settings: "FILL" 1, "wght" 600, "GRAD" 0, "opsz" 48; }
+.hero-txt { display: contents; }
+.hero-big {
+  grid-area: big; font-size: clamp(28px, min(14cqi, 12.5cqh), 52px); font-weight: 800; line-height: 1.04; letter-spacing: -.015em;
+  font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.hero-sub {
+  grid-area: sub; margin: 6px 2px 0; font-size: clamp(18px, min(7.2cqi, 6.6cqh), 28px); font-weight: 680; line-height: 1.14; color: var(--ink);
+  overflow-wrap: break-word; text-wrap: pretty;
+}
+.hero-sub:empty { display: none; }
+
+/* ---------- blueprint ---------- */
+.map { position: relative; flex: 1 1 auto; min-height: 48px; container: map / size; border-radius: 18px; overflow: hidden; background: var(--land); box-shadow: inset 0 0 0 1px var(--line); }
+#plan { position: absolute; inset: 0; }
+.map-floor, .map-off {
+  position: absolute; top: 6px; display: inline-flex; align-items: center; gap: 4px; padding: 2px 9px;
+  border-radius: 999px; font-size: 12px; font-weight: 750; letter-spacing: .02em;
+  background: rgba(6, 12, 18, .82); box-shadow: inset 0 0 0 1px var(--line);
+}
+.map-floor { left: 6px; color: var(--ink-2); }
+.map-off { right: 6px; color: var(--bad); }
+.map-off .ms { font-size: 15px; }
+.map-reset {
+  pointer-events: auto; position: absolute; top: 6px; right: 6px; display: inline-flex; align-items: center; gap: 4px; padding: 2px 9px;
+  border: 0; border-radius: 999px; font: inherit; font-size: 12px; font-weight: 750; cursor: pointer;
+  background: rgba(6, 12, 18, .82); color: var(--ink-2); box-shadow: inset 0 0 0 1px var(--line);
+}
+.map-reset .ms { font-size: 15px; }
+.map-off:not([hidden]) ~ .map-reset { display: none; }
+.map-chips { position: absolute; left: 6px; right: 6px; bottom: 6px; display: flex; flex-wrap: wrap-reverse; gap: 6px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 5px; max-width: 100%; padding: 3px 10px 3px 6px; border-radius: 999px;
+  font-size: clamp(12.5px, 3.8cqi, 15px); font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  background: rgba(6, 12, 18, .86); color: var(--ink); box-shadow: inset 0 0 0 1px var(--line);
+}
+.chip .ms { font-size: 1.3em; color: var(--ink-2); }
+.chip.lift { background: var(--lift); color: #12082a; box-shadow: none; }
+.chip.lift .ms { color: inherit; }
+.map-voice {
+  position: absolute; left: 6px; right: 6px; bottom: 6px; z-index: 2; display: flex; align-items: center; gap: 8px;
+  padding: 8px 12px; border-radius: 14px; background: rgba(17, 29, 41, .94); box-shadow: inset 0 0 0 1px var(--line), 0 6px 18px rgba(0, 0, 0, .45);
+  font-size: clamp(15px, 4.6cqi, 19px); font-weight: 750; line-height: 1.2; animation: slide-in .25s cubic-bezier(.2, .8, .2, 1) both;
+}
+.map-voice .ms { flex: none; font-size: 1.4em; color: var(--bad); }
+/* working and problem are small popups; only listening gets the big panel */
+.map-voice:is([data-kind="working"], [data-kind="problem"]) {
+  left: 50%; right: auto; translate: -50% 0; width: max-content; max-width: calc(100% - 12px);
+  padding: 6px 12px 6px 9px; border-radius: 999px; font-size: clamp(13px, 3.8cqi, 15px);
+}
+.map-voice[data-kind="problem"] { border-radius: 14px; box-shadow: inset 0 0 0 1.5px var(--wait), 0 6px 18px rgba(0, 0, 0, .45); }
+.map-voice[data-kind="problem"] .ms { color: var(--wait); }
+.map-voice[data-kind="working"] .ms { color: var(--route); animation: voice-pulse .8s ease-in-out infinite alternate; }
+.map-voice[data-kind="working"] .voice-txt { -webkit-line-clamp: 1; color: var(--ink-2); }
+.map-voice[data-kind="problem"] .voice-txt { -webkit-line-clamp: 3; }
+.map-voice[data-kind="listening"] .ms { animation: voice-pulse 1s ease-in-out infinite alternate; }
+.voice-txt { flex: 1; min-width: 0; overflow-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+@keyframes voice-pulse { to { opacity: .45; } }
+@container map (max-height: 110px) {
+  .map-floor, .map-off { top: 4px; padding: 1px 8px; font-size: 11px; }
+  .map-floor { left: 4px; }
+  .map-off, .map-reset { right: 4px; }
+  .map-reset { top: 4px; padding: 1px 8px; font-size: 11px; }
+  .map-chips { left: 4px; right: 4px; bottom: 4px; gap: 4px; }
+  .chip { padding: 1px 8px 1px 5px; font-size: 11.5px; }
+}
+
+.plan { position: absolute; inset: 0; overflow: hidden; background: var(--land); }
+.plan-svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.plan-outline { fill: none; stroke: #3c5a76; stroke-width: 2.5; vector-effect: non-scaling-stroke; }
+.sp { fill: #0f1c29; stroke: #263f57; stroke-width: 1; vector-effect: non-scaling-stroke; }
+.sp.t-corridor, .sp.t-hall { fill: #19293a; }
+.sp.t-lift, .sp.t-stair { fill: #233446; }
+.sp.t-outdoor { fill: #0b1712; }
+.sp.hl { fill: #18324a; stroke: var(--accent); stroke-width: 2.5; }
+.sp.closed { fill: #3a1418; stroke: var(--bad); stroke-width: 1.5; stroke-dasharray: 4 3; }
+.plan-label {
+  fill: var(--ink-2); font: 600 10px "Roboto Flex", system-ui, sans-serif; text-anchor: middle; dominant-baseline: central;
+  paint-order: stroke; stroke: var(--land); stroke-width: 3px; stroke-linejoin: round; pointer-events: none;
+}
+.plan-label.hl { fill: #fff; font-weight: 800; font-size: 11px; }
+.plan-icon {
+  font-family: "Material Symbols Rounded"; font-size: 13px; fill: #6f8aa3; text-anchor: middle; dominant-baseline: central;
+  pointer-events: none;
+}
+.plan-heat { display: none; }
+.plan-entrance { fill: var(--go); }
+.as { fill: #182a3c; stroke: #30495f; stroke-width: .8; vector-effect: non-scaling-stroke; }
+.as.hl { fill: var(--search); stroke: #fff; stroke-width: 2; }
+.plan-route { stroke: var(--route); stroke-width: 6; }
+.plan-route-casing { stroke: #03070b; stroke-width: 11; opacity: .9; }
+.plan-route-walked { stroke: #4c6278; stroke-width: 4; stroke-dasharray: 1 8; }
+.plan-start { fill: var(--land); stroke: var(--ink-2); stroke-width: 3; }
+.plan-goal { fill: #ff5d5d; stroke: #fff; stroke-width: 1.5; }
+.plan-marker circle { fill: var(--lift); stroke: #fff; stroke-width: 2; }
+.plan-marker-icon {
+  font-family: "Material Symbols Rounded"; font-size: 16px; fill: #12082a; text-anchor: middle; dominant-baseline: central;
+  font-variation-settings: "FILL" 1, "wght" 600, "GRAD" 0, "opsz" 20;
+}
+.plan-marker-text { font: 800 13px "Roboto Flex", Roboto, system-ui, sans-serif; fill: #fff; paint-order: stroke; stroke: #03070b; stroke-width: 4px; }
+.plan-dot-label { display: none; }
+
+/* ---------- voice ---------- */
+.pg[data-state="idle"] .hero-icon { display: none; }
+.mic {
+  grid-area: mic; margin-left: 8px; width: clamp(46px, 15cqi, 64px); aspect-ratio: 1; display: grid; place-items: center; padding: 0;
+  border: 0; border-radius: 50%; background: var(--surface-2); color: var(--ink); cursor: pointer; pointer-events: auto;
+  box-shadow: inset 0 0 0 1px var(--line); transition: background-color .2s ease, transform .15s ease;
+}
+.mic .ms { font-size: clamp(26px, 8.4cqi, 36px); font-variation-settings: "FILL" 1, "wght" 600, "GRAD" 0, "opsz" 40; }
+.mic:active { transform: scale(.94); }
+.mic { touch-action: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+.pg.listening .mic { background: var(--bad); color: #fff; box-shadow: none; animation: mic-pulse 1.2s ease-out infinite; }
+.pg[data-state="error"] .mic { display: none; }
+@keyframes mic-pulse { from { box-shadow: 0 0 0 0 rgba(255, 107, 107, .55); } to { box-shadow: 0 0 0 14px rgba(255, 107, 107, 0); } }
+
+/* ---------- error ---------- */
+.pg[data-state="error"] .map { display: none; }
+.pg[data-state="error"] .hero { flex: 1; display: flex; flex-direction: column; justify-content: center; text-align: center; gap: 12px; border-radius: var(--in) var(--in) 16px 16px; }
+.pg[data-state="error"] .hero-big { white-space: normal; }
+
+/* ---------- motion ---------- */
+.hero.enter .hero-icon { animation: icon-in .5s cubic-bezier(.2, .9, .25, 1.15) both; }
+.hero.enter :is(.hero-big, .hero-sub) { animation: slide-in .45s cubic-bezier(.2, .8, .2, 1) both; }
+@keyframes icon-in { from { opacity: 0; transform: scale(.72) rotate(-8deg); } }
+@keyframes slide-in { from { opacity: 0; transform: translateY(12px); } }
+@media (prefers-reduced-motion: reduce) {
+  .hero.enter .hero-icon, .hero.enter :is(.hero-big, .hero-sub), .pg.listening .mic, .map-voice, .map-voice .ms { animation: none; }
+}
+
+
+.map-chips:has(> .pick) { inset: 0; display: block; overflow-y: auto; pointer-events: auto; touch-action: pan-y; }
+.pick { display: flex; flex-direction: column; gap: 6px; padding: 6px; pointer-events: auto; }
+.pick a {
+  display: grid; grid-template-columns: auto 1fr; column-gap: 10px; align-items: center; padding: 7px 12px; line-height: 1.2;
+  border-radius: 14px; background: var(--surface-2); color: var(--ink); text-decoration: none;
+}
+.pick a .ms { grid-row: span 2; color: var(--accent); }
+.pick small { color: var(--muted); }
